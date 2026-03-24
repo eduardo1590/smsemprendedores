@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Emprendedores | Vence el Algoritmo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#4facfe',
+                            DEFAULT: '#00f2fe',
+                            dark: '#00c6ff',
+                        },
+                        telecom: '#1e3c72'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .operator-bg {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-cyan-400 text-white p-2 rounded-lg">
+                        <i class="fas fa-comment-sms text-xl"></i>
+                    </div>
+                    <span class="font-bold text-2xl tracking-tight text-gray-900">SMS<span class="text-blue-500">Emprendedores</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#beneficios" class="text-gray-600 hover:text-blue-500 font-medium transition">Beneficios</a>
+                   <!-- <a href="#como-funciona" class="text-gray-600 hover:text-blue-500 font-medium transition">Cómo Funciona</a> -->
+                    <a href="#operadoras" class="text-telecom font-bold border-b-2 border-transparent hover:border-telecom transition">Para Operadoras</a>
+                    <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-bold shadow-lg shadow-blue-500/30 transition transform hover:-translate-y-0.5">Empieza Ya</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10">
+                    <div class="inline-block bg-blue-100 text-blue-700 font-semibold px-4 py-1.5 rounded-full mb-6 text-sm border border-blue-200">
+                        🚀 La evolución del Marketing Directo
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                        Vence al algoritmo. <br>
+                        Llega directo al <span class="gradient-text">bolsillo de tus clientes.</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Olvídate de rogar por vistas en redes sociales. Con <strong>SMS Emprendedores</strong>, el 98% de tus mensajes son leídos en los primeros 3 minutos. Envía enlaces a tu WhatsApp, Instagram o tienda, y multiplica tus ventas hoy.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contacto" class="text-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-blue-500/30 transition transform hover:-translate-y-1">
+                            Crear cuenta gratis
+                        </a>
+                        <a href="#operadoras" class="text-center bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 px-8 py-4 rounded-full font-bold text-lg shadow-sm transition">
+                            Ver modelo de negocio
+                        </a>
+                    </div>
+                    <div class="mt-8 flex items-center gap-4 text-sm text-gray-500 font-medium">
+                        <div class="flex -space-x-2">
+                            <img class="w-8 h-8 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&q=80" alt="User" onerror="this.src='https://ui-avatars.com/api/?name=User+1&background=random'">
+                            <img class="w-8 h-8 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&q=80" alt="User" onerror="this.src='https://ui-avatars.com/api/?name=User+2&background=random'">
+                            <img class="w-8 h-8 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=64&q=80" alt="User" onerror="this.src='https://ui-avatars.com/api/?name=User+3&background=random'">
+                        </div>
+                        <p>Únete a miles de emprendedores facturando más.</p>
+                    </div>
+                </div>
+                <div class="relative z-10 hidden lg:block">
+                    <!-- Decorative elements -->
+                    <div class="absolute inset-0 bg-blue-400 rounded-full blur-3xl opacity-20 transform translate-x-10 translate-y-10"></div>
+                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="[Emprendedor usando smartphone]" class="relative rounded-3xl shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition duration-500" onerror="this.style.display='none'">
+                    
+                    <!-- Floating stat card -->
+                    <div class="absolute -bottom-6 -left-10 bg-white p-5 rounded-2xl shadow-xl border border-gray-100 animate-bounce" style="animation-duration: 3s;">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-green-100 p-3 rounded-full text-green-600">
+                                <i class="fas fa-chart-line text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-bold uppercase tracking-wider">Tasa de Apertura</p>
+                                <p class="text-2xl font-black text-gray-900">98.2%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El Problema vs La Solución -->
+    <section id="beneficios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">¿Tus posts de Instagram ya no los ve nadie?</h2>
+            <p class="text-xl text-gray-600 mb-16 max-w-3xl mx-auto">Las redes sociales controlan quién te ve. Cerca del 90% de tus seguidores no ven tus publicaciones debido al algoritmo. Es hora de tomar el control.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition duration-300 border border-gray-100 text-left">
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Atención Inmediata</h3>
+                    <p class="text-gray-600">No dependes de la suerte. El mensaje llega al instante a la pantalla principal del móvil de tu cliente. Garantía de visibilidad que ninguna red social ofrece.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition duration-300 border border-gray-100 text-left">
+                    <div class="bg-purple-100 w-14 h-14 rounded-xl flex items-center justify-center text-purple-600 text-2xl mb-6">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tráfico con URLs Cortas</h3>
+                    <p class="text-gray-600">Incluye un enlace en tu SMS que dirija directamente a tu chat de WhatsApp, tu catálogo, un formulario o tu última oferta. Medible y efectivo.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition duration-300 border border-gray-100 text-left">
+                    <div class="bg-green-100 w-14 h-14 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Segmentación Precisa</h3>
+                    <p class="text-gray-600">Crea listas de clientes V.I.P, deudores, o interesados. Envía ofertas masivas personalizadas en el horario y fecha que mejor convierta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Comparison -->
+    <section class="py-20 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold mb-6">Calculadora de Impacto</h2>
+                    <p class="text-gray-600 mb-8">Comprueba tú mismo la diferencia de alcance entre una publicación orgánica en redes sociales y una campaña directa de SMS.</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Base de datos / Seguidores</label>
+                            <input type="range" id="audienceSlider" min="1000" max="50000" step="1000" value="10000" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                            <div class="text-right font-bold text-blue-600 mt-2 text-xl" id="audienceValue">10,000 personas</div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mt-8">
+                            <div class="bg-red-50 rounded-xl p-4 border border-red-100 text-center">
+                                <i class="fab fa-instagram text-red-400 text-2xl mb-2"></i>
+                                <p class="text-xs text-gray-500 font-bold uppercase">Vistas Redes (10%)</p>
+                                <p class="text-2xl font-black text-red-600" id="socialViews">1,000</p>
+                            </div>
+                            <div class="bg-green-50 rounded-xl p-4 border border-green-100 text-center relative overflow-hidden">
+                                <div class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold px-2 py-1 rounded-bl-lg">GANADOR</div>
+                                <i class="fas fa-sms text-green-500 text-2xl mb-2"></i>
+                                <p class="text-xs text-gray-500 font-bold uppercase">Leídos SMS (98%)</p>
+                                <p class="text-2xl font-black text-green-600" id="smsViews">9,800</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 bg-blue-600 p-10 lg:p-16 text-white flex flex-col justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-4"><i class="fas fa-quote-left opacity-50 mr-2"></i>Caso de Éxito: Tienda de Repuestos</h3>
+                        <p class="text-blue-100 text-lg italic mb-6">"Enviaba mis ofertas por Instagram y solo me respondían 3 personas. Probé cargando mi base de datos de 500 clientes al sistema de SMS con un link corto a mi catálogo de WhatsApp. En 10 minutos tenía 45 pedidos confirmados."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold text-xl">
+                                C
+                            </div>
+                            <div>
+                                <p class="font-bold">Carlos M.</p>
+                                <p class="text-sm text-blue-200">Emprendedor Automotriz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PITCH PARA OPERADORAS (B2B Strategic Section) -->
+    <section id="operadoras" class="operator-bg text-white py-24 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+            <div class="absolute w-96 h-96 bg-white opacity-5 rounded-full blur-3xl -top-20 -left-20"></div>
+            <div class="absolute w-[500px] h-[500px] bg-blue-400 opacity-10 rounded-full blur-3xl bottom-0 right-0"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="bg-white/10 text-blue-200 border border-white/20 px-4 py-1.5 rounded-full text-sm font-bold tracking-widest uppercase mb-4 inline-block">Alianzas Estratégicas</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Una Oportunidad de Oro para Operadoras</h2>
+                <p class="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
+                    El uso masivo global de SMS como canal de contacto A2P está en explosión. Asociarse con nuestra plataforma permite a las Operadoras de Telefonía monetizar su infraestructura ociosa, ofreciendo un servicio de valor agregado directo al sector de mayor crecimiento: <strong>Los Emprendedores y PYMES</strong>.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-2xl text-center">
+                    <i class="fas fa-users text-4xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-1">100,000+</h3>
+                    <p class="text-blue-200 text-sm">Mercado Potencial (Emprendedores)</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-2xl text-center">
+                    <i class="fas fa-sack-dollar text-4xl text-green-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-1">$10 USD</h3>
+                    <p class="text-blue-200 text-sm">Ingreso Promedio Mensual (ARPU)</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-2xl text-center transform scale-105 shadow-2xl ring-2 ring-cyan-400">
+                    <i class="fas fa-chart-pie text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-3xl font-black mb-1">$1,000,000</h3>
+                    <p class="text-blue-200 font-bold">Potencial MRR</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-2xl text-center">
+                    <i class="fas fa-server text-4xl text-purple-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-1">99.99%</h3>
+                    <p class="text-blue-200 text-sm">Disponibilidad de plataforma</p>
+                </div>
+            </div>
+
+            <div class="bg-white text-gray-900 rounded-3xl p-8 md:p-12 shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-telecom">El Modelo "Ganar-Ganar"</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                                <div>
+                                    <strong class="block text-lg">Nuevas fuentes de ingreso</strong>
+                                    <span class="text-gray-600">Convierta los SMS en un producto altamente demandado y rentable bajo modalidad prepago.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                                <div>
+                                    <strong class="block text-lg">Plataforma Marca Blanca (White Label)</strong>
+                                    <span class="text-gray-600">Ofrezca a sus clientes corporativos y pymes un portal web robusto, intuitivo y bajo su propia marca (Ej. <em>SMS Empresas Movilnet / Movistar / Digitel</em>).</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                                <div>
+                                    <strong class="block text-lg">Despliegue Rápido (API & Gateway)</strong>
+                                    <span class="text-gray-600">Integración nativa con su Core, manejo de alto tráfico (>20 Millones SMS/día) y seguridad garantizada.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                        <i class="fas fa-handshake text-6xl text-telecom mb-4"></i>
+                        <h4 class="text-xl font-bold mb-2">Con nuestra presentación técnica</h4>
+                       <p class="text-gray-600 mb-6">Descubra la arquitectura, flujos y capacidades de concurrencia de nuestra plataforma.</p>
+                        <!-- <button onclick="alert('En un entorno real, esto abriría un calendario para agendar reuniones B2B.')" class="w-full bg-telecom hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-xl transition shadow-lg">
+                            Agendar Demo B2B
+                        </button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / CTA Emprendedores -->
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Empieza a conectar con tus clientes reales hoy</h2>
+            <p class="text-xl text-gray-600 mb-10">Sin algoritmos, sin intermediarios. Tu mensaje, directo a su mano.</p>
+            
+            <div class="bg-blue-50 border-2 border-blue-200 rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 text-blue-100 opacity-50">
+                    <i class="fas fa-paper-plane text-9xl"></i>
+                </div>
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-bold mb-2">Prueba Gratis la Plataforma</h3>
+                    <p class="text-gray-600 mb-8 max-w-xl mx-auto">Envia un mensaje de prueba. Indica tus contactos. Te regalamos un paquete de SMS para que lances tu primera campaña con URL corta hoy mismo.</p>
+                    
+                    <div class="flex flex-col md:flex-row gap-4 justify-center max-w-2xl mx-auto">
+                        <input type="tel" id="smsNumber" placeholder="Número de Contacto" required class="flex-1 px-6 py-4 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-lg">
+                        <a href="sms:" onclick="this.href='sms:44241?body=' + document.getElementById('smsNumber').value + 'Hola,%20esta%20es%20una%20prueba%20desde%20la%20Landing%20Page%20de%20SMS%20Emprendedores!';" class="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-bold py-4 px-10 rounded-full shadow-lg transition transform hover:-translate-y-1 text-lg whitespace-nowrap text-center flex items-center justify-center">
+                            Enviar SMS
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4"><i class="fas fa-lock text-gray-400 mr-1"></i> Datos 100% seguros. Acceso inmediato.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-800 pb-8 mb-8">
+                <div class="flex items-center gap-2 mb-4 md:mb-0">
+                    <i class="fas fa-comment-sms text-blue-500 text-2xl"></i>
+                    <span class="font-bold text-xl text-white">SMS<span class="text-blue-500">Emprendedores</span></span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between text-sm">
+                <p>&copy; 2026 Plataforma SMS. Todos los derechos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Términos y Condiciones</a>
+                    <a href="#" class="hover:text-white transition">Política de Privacidad</a>
+                    <a href="#" class="hover:text-white transition">API para Desarrolladores</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for Interactive Calculator -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slider = document.getElementById('audienceSlider');
+            const audValue = document.getElementById('audienceValue');
+            const socialViews = document.getElementById('socialViews');
+            const smsViews = document.getElementById('smsViews');
+
+            const updateCalculator = () => {
+                const val = parseInt(slider.value);
+                // Update text with commas
+                audValue.textContent = val.toLocaleString() + ' personas';
+                
+                // Calculate views
+                // Social Media assumed at roughly 10% organic reach (optimistic)
+                const social = Math.floor(val * 0.10); 
+                // SMS assumed at 98% open rate
+                const sms = Math.floor(val * 0.98);
+
+                socialViews.textContent = social.toLocaleString();
+                smsViews.textContent = sms.toLocaleString();
+            };
+
+            slider.addEventListener('input', updateCalculator);
+            // Initialize
+            updateCalculator();
+        });
+    </script>
+</body>
+</html>
